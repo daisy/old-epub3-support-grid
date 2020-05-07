@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>{{site.title}}: {{ title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" type="text/css" href="/old-epub3-support-grid/media/datatables/datatables.min.css"/>
+
+    <!-- Bootstrap -->
+    <link href="/old-epub3-support-grid/media/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- custom css -->
+    <link href="/old-epub3-support-grid/media/css/custom.css" rel="stylesheet" media="screen">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/old-epub3-support-grid/media/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="/old-epub3-support-grid/media/js/respond.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" src="/old-epub3-support-grid/media/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="/old-epub3-support-grid/media/js/datatables-init.js"></script>
+
+    <script type="text/javascript" src="/old-epub3-support-grid/media/js/js.cookie.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+</head>
+
+<body>
+    <header>
+        <p>This site is an archive of the EPUB3 Support Grid. The results here are <em>not current</em>. </p>
+        <p>For current accessibility testing results, please go to <a href="http://epubtest.org">epubtest.org</a>.</p>
+    </header>
+    <nav class="navbar" aria-label="main sections">
+        <ul class="nav navbar-nav pull-right" role="navigation">
+            <li><a href="/old-epub3-support-grid/">Home</a></li>
+            <li><a href="/old-epub3-support-grid/features/">Features</a></li>
+            <li><a href="/old-epub3-support-grid/testsuite/epub3/">Reading Systems</a></li>
+            <li><a href="/old-epub3-support-grid/testsuite/">Test Suite</a></li>
+        </ul>
+    </nav>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        <p>Development of this site was sponsored by the <a target="_blank" href="http://www.daisy.org">DAISY Consortium</a> and the <a target="_blank" href="https://www.bisg.org">Book Industry Study Group</a>.</p>
+        <p><em>Last updated April 28, 2019, 3:24 p.m..</em></p>
+    </footer>
+</body>
+</html>

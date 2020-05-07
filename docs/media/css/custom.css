@@ -1,0 +1,858 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    font-size: 1.4rem;
+}
+header {
+    font-size: larger;
+    text-align: center;
+    background: lightyellow;
+    border-bottom: yellow thin solid;
+    padding: 3rem;
+}
+header em {
+    font-weight: bold;
+}
+.container {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+div#contents {
+    background-color: #fff;
+    padding-bottom: 40px;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.filter {
+    font-weight: bold;
+}
+
+.tbl-view {
+    font-weight: bold;
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+/***************************************************************/
+/*           HEADINGS                                          */
+/***************************************************************/
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div#contents > h1 {
+    font-size: 160%;
+    font-weight: normal;
+    text-indent: 0.5rem;
+    color: #fff;
+    background-color: #007bf6;
+    padding: 1rem;
+    margin: 0;
+}
+
+div#contents > h1+div.dataTables_wrapper {
+    margin-top: 2rem;
+}
+
+div#contents h2 {
+    font-size: 100%;
+    font-weight: bold;
+    text-indent: 0.75rem;
+    color: #000;
+    background-color: #a7deff;
+    padding: 0.5rem;
+    margin: 4em 0 1em 0;
+}
+
+div#contents ul+h2,
+div#contents p+h2.ts {
+    margin-top: 2rem;
+}
+
+div#contents h2.features-ts {
+    font-size: 115%;
+    font-weight: bold;
+    padding-left: 0.7rem;
+}
+div#contents h3.features-category {
+    font-size: 115%;
+    color: #000;
+    background: none;
+    margin-top: 2rem;
+    padding: 0.3rem 0 0.3rem 1rem;
+    border-left: 0.1rem solid #ddd;
+    border-top: 0.1rem solid #ddd;
+    background-color: #e2f4ff;
+}
+
+div#contents h2.category {
+    margin-top: 2rem;
+}
+
+div#contents h1+h2,
+div#contents h1+h2.category {
+    margin-top: 0;
+}
+
+div#contents h2.rs-category {
+    font-size: 160%;
+    font-weight: normal;
+    color: #004080;
+    background: none;
+    margin: 5rem 0 1rem 1.5rem;
+    padding: 0;
+}
+
+div#contents h2.eval {
+    margin: 2rem 0rem;
+}
+
+div#contents p.user+h2.eval {
+    margin-top: 1rem;
+}
+
+/***************************************************************/
+/*           MISC CONTENT DIV                                  */
+/***************************************************************/
+
+
+div#contents > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+p {
+    width: 90%;
+}
+
+a {
+    color: #004080;
+    font-weight: bold;
+}
+
+a:hover {
+    font-weight: bolder;
+    color: #0d93cf;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1+p {
+    margin-top: 1rem;
+}
+
+
+/***************************************************************/
+/*           FOOTER                                            */
+/***************************************************************/
+
+
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    border-top: 1px solid black;
+}
+
+footer img {
+    margin-right: 40px; margin-bottom: 20px;
+}
+
+footer a {
+    color: #004080;
+}
+
+footer p {
+    width: 100%;
+}
+
+/***************************************************************/
+/*           NAVIGATION BAR                                    */
+/***************************************************************/
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    color: #004080;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
+.navbar .logos {
+    float: left; width: auto; padding-top: 1rem;
+}
+
+.navbar .logos img {
+    padding-left: 2rem;
+}
+
+.navbar .logos img:first-child {
+    padding-left: 0;
+}
+
+.navbar a:hover,
+.navbar-nav > li > a:hover,
+.navbar-nav>li>a.navbar-brand:hover {
+    color: #0d93cf;
+}
+
+.navbar-nav>li>a.navbar-brand {
+    color: #80ff80;
+}
+
+.navbar-nav>li>a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: inherit;
+    font-weight: bold;
+}
+
+.navbar-nav ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-nav ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 10px 5px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.navbar-nav ul li:hover {
+}
+
+.navbar-nav ul li a {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.navbar-nav ul li a:hover {
+    text-decoration: none;
+    /*color: #9400D3;*/
+}
+
+.navbar ul li ul {
+  padding: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar ul li ul li {
+  display: block;
+  width: 150px;
+}
+.navbar ul li ul li:hover { background: #fff; }
+.navbar ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-active {
+    color: #0099cc !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.navbar-manage {
+    background-color: #eee;
+    min-height: auto !important;
+}
+
+.navbar-manage .navbar-nav {
+    margin-right: 1.5rem;
+}
+
+.navbar-manage .navbar-nav>li>a {
+    font-size: 90%;
+    padding: 0.3rem 0 0.3rem 2rem;
+}
+
+/***************************************************************/
+/*           HOME PAGE FEATURE BUTTONS                         */
+/***************************************************************/
+
+
+p.start {
+    text-align: center;
+    font-weight: bold;
+}
+
+nav#support-nav {
+    width: 100%;
+    margin: 3rem 0 2rem 0;
+}
+
+nav#support-nav > div.framing {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.lower {
+    margin-top: 6rem;
+}
+
+a.button {
+    text-align: center;
+    float:left;
+    margin-left: 2rem;
+    width: 22rem;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.button span.button-hd {
+    font-weight: bold;
+    font-size: 120%;
+    color: #004080;
+    background-color: #e5f2f6;
+    padding: 0.4rem;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5rem #007bf6;
+}
+
+a.button span.button-label {
+    display: block;
+    width: 100%;
+    font-size: 100%;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+nav#support-nav p {
+    margin-top: 0.5rem;
+}
+
+div#contents > h2.pad-top {
+    margin-top: 2rem;
+}
+
+
+div.front { width: 100%; }
+div.front-left { float: left; width: 45%; margin-right: 40px; height: 300px; }
+div.front-right { margin-left: 20px; }
+
+
+/***************************************************************/
+/*           TABLE SEARCH                                      */
+/***************************************************************/
+
+input[type="search"] {
+    width: 28rem;
+}
+
+/***************************************************************/
+/*           TABLES                                            */
+/***************************************************************/
+/* description before a11y grid */
+.grid-desc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.grid-desc-2 {
+  margin-bottom: 30px;
+}
+th {
+    text-transform: uppercase;
+    text-align: center;
+}
+th.rsname {
+  text-transform: none;
+  text-align: left;
+}
+td.rsat {
+  font-weight: bolder;
+  color: rgb(0, 64, 128);
+  text-align: left;
+}
+
+.table {
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+    vertical-align: middle;
+}
+
+
+/* override the default sort arrows so that we can choose accessible colors */
+table.dataTable thead th {
+    position: relative;
+    background-image: none !important;
+}
+
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
+}
+table.dataTable thead th.sorting:after {
+    content: "\f0dc";
+    color: #686868;
+    font-size: 1em;
+    padding-top: 0.12em;
+}
+table.dataTable thead th.sorting_asc:after {
+    content: "\f0de";
+    color: #000;
+}
+table.dataTable thead th.sorting_desc:after {
+    content: "\f0dd";
+    color: #000;
+}
+
+/* override border color */
+.table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+  border-color: rgba(175, 175, 175, 0.7);
+  border-width: 2px;
+  box-shadow: rgba(0,0,0,0.1) 0px 2px 2px, inset rgba(0,0,0,0.1) 0px -1px 2px;
+}
+/***************************************************************/
+/*           FEATURE TABLES                                    */
+/***************************************************************/
+
+/* first three defs are overrides on datatables to shrink and remove bottom border */
+
+p.small {
+    font-size: 90%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.normal:hover {
+    font-weight: normal;
+}
+
+.inactiveLink {
+    color: gray;
+}
+
+.inactiveLink:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+table.dataTable {
+    margin: 0;
+    width: auto;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody,
+table.dataTable thead th {
+    border-bottom: none;
+    vertical-align: bottom;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: left;
+}
+
+.table-feature {
+    width: auto;
+}
+
+.table-feature td,
+.table-feature th {
+    text-align: center;
+    border-right: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.table-feature>thead th.rs,
+.table-feature>tbody th.rs {
+    min-width: 24rem;
+    max-width: 30rem;
+}
+.table-feature>thead th.pass,
+.table-feature>tbody td.pass {
+    min-width: 9rem;
+    max-width: 12rem;
+}
+.table-feature>thead th,
+.table-feature>tbody td {
+    min-width: 11rem;
+    max-width: 15rem;
+    word-wrap: break-word;
+}
+
+.table-feature>tbody>tr>th {
+    font-weight: normal;
+}
+
+.colwrap-list {
+     -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-width: 10rem;
+    -moz-column-width: 10rem;
+    column-width: 10rem;
+    margin-bottom: 2rem;
+    list-style-type: square;
+}
+
+.colwrap-list a {
+    font-weight: normal;
+    font-size: 105%;
+    color: #004080;
+}
+
+/***************************************************************/
+/*           RS SUMMARY TABLES                                 */
+/***************************************************************/
+
+
+.table-striped td {
+    text-align: center;
+    width: 125px;
+}
+
+.table-striped td a {
+    font-weight: normal;
+    color: #004080;
+}
+
+
+/***************************************************************/
+/*           RS REPORT TABLES                                  */
+/***************************************************************/
+
+
+nav.category-list h2 {
+    font-size: 120%;
+    font-weight: bold;
+    text-indent: 0.5rem;
+}
+
+.blend {
+    min-width: 32rem;
+    max-width: 32rem;
+    border: none;
+}
+
+.blend>thead>tr>th {
+    text-align: left;
+    text-transform: none;
+}
+
+.blend th,
+.blend td {
+    padding: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.blend td a {
+    font-weight: normal;
+    color: #004080;
+}
+
+td.score {
+    font-weight: bold;
+}
+
+td.no-note {
+    background-color: inherit !important;
+}
+
+br {
+    clear: both;
+}
+
+.table-condensed {
+    width: 75%;
+}
+
+.table-condensed th {
+    text-align: left;
+}
+
+.table-condensed th.feature-hd,
+.table-condensed th.result-hd {
+    width: 15%;
+}
+
+.table-condensed th.test-hd {
+    width: 70%;
+}
+
+.table-condensed .category .result {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.table-condensed h3,
+.table-condensed .feature .result {
+    font-size: 110%;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.table-condensed>tbody>tr:nth-child(odd)>th,
+.table-condensed>tbody>tr:nth-child(odd)>td,
+.table-condensed>tbody>tr:nth-child(even)>th,
+.table-condensed>tbody>tr:nth-child(even)>td {
+    background-color: #fff;
+    border: none;
+}
+
+.table-condensed>tbody>tr.feature>td {
+    background-color: #ecf6fa;
+}
+
+.table-condensed > tbody > tr >td.test {
+    border-bottom: 1px solid #ecf6fa;
+}
+
+p.top a {
+    color: #004080
+}
+
+
+/***************************************************************/
+/*           ALTERNATING ROW COLOURS                           */
+/***************************************************************/
+
+.category-summary>thead>tr>th,
+.table-striped>thead>tr>th,
+.table-feature>thead>tr>th,
+.table-condensed>thead>tr>th,
+.table-condensed>tfoot>tr.score>th,
+.table-condensed>tfoot>tr.score>td {
+    background-color: #e5eaf6;
+}
+
+
+.category-summary>tbody>tr:nth-child(odd)>th,
+.category-summary>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th,
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-feature>tbody>tr:nth-child(odd)>th,
+.table-feature>tbody>tr:nth-child(odd)>td {
+    background-color: #fefefc;
+}
+
+.category-summary>tbody>tr:nth-child(even)>th,
+.category-summary>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th,
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-feature>tbody>tr:nth-child(even)>th,
+.table-feature>tbody>tr:nth-child(even)>td {
+    background-color: #ecf6fa;
+}
+
+
+/***************************************************************/
+/*           FEATURE SUPPORT CELLS                             */
+/***************************************************************/
+
+.table-feature > tbody > tr > td.supported,
+.table-condensed > tbody > tr > td.supported {
+    background-color: green;
+    color: white;
+}
+
+.table-feature > tbody > tr > td.unsupported,
+.table-condensed > tbody > tr > td.unsupported {
+    background-color: red;
+    color: white;
+}
+
+.table-feature > tbody > tr > td.other,
+.table-condensed > tbody > tr > td.other {
+    font-style: italic;
+    font-size: 85%;
+    color: #434343;
+    background-color: rgb(245,245,245);
+}
+
+
+/***************************************************************/
+/*           FORMS                                             */
+/***************************************************************/
+
+div.form {
+    margin-top: 3rem;
+}
+
+div.form div.fields {
+    text-align: right;
+    max-width: 42rem;
+}
+
+div.form input[type="submit"] {
+    margin-right: 4.3rem;
+    min-width: 8rem;
+}
+
+div.form label {
+    padding-right: 1rem;
+}
+
+
+/***************************************************************/
+/*           MANAGE                                            */
+/***************************************************************/
+
+
+p.user {
+    font-size: 90%;
+    color: #000;
+    max-width: 30rem;
+    float: left;
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+}
+
+p.manage-none {
+    font-style: italic;
+    margin: 2rem 0;
+}
+
+div.dataTables_wrapper+div.manage-options,
+table+div.manage-options {
+    margin-top: 2rem;
+}
+
+table#rs ul,
+table#eval ul,
+table#tbl-epub3 ul,
+table#tbl-accessibility ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+table#tbl-epub3 ul,
+table#tbl-accessibility ul {
+    padding: 0;
+}
+
+
+/***************************************************************/
+/*           ADD EVALUATIONS                                   */
+/***************************************************************/
+
+select[name="reading_system"] {
+    max-width: 42rem;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left !important;
+}
+
+
+/***************************************************************/
+/*           EDIT EVALUATIONS                                  */
+/***************************************************************/
+
+.table-striped td.result,
+.table-striped td.desc {
+    text-align: left;
+}
+
+.table-striped td {
+    vertical-align: top !important;
+}
+
+ul.lfloat {
+    margin: 0;
+    padding: 0;
+}
+
+ul.lfloat li {
+    float: left;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+div.eval-info-container {
+    margin: 1rem 0;
+}
+
+div.eval-info-container+h2 {
+    margin-top: 3rem !important;
+}
+
+.nomark {
+    list-style-type: none;
+}
+
+.nomark li {
+    margin-top: 0.5rem;
+}
+
+.listhd {
+    text-indent: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.nomargin {
+    padding: 0;
+}
