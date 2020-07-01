@@ -4,7 +4,7 @@ This project is a static site for the old epubtest.org archives, for anyone inte
 
 ## Project notes
 
-* `/sources`: pages scraped directly from the site
+* `/utils`: script to convert the original site files to markdown
 * `/src`: static site generator source files (markdown)
 
 The files in `/src/content` were converted from the original site. The conversion mainly cleaned up links and reformatted the pages so they could be templated. No data was changed.
