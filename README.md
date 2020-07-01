@@ -16,4 +16,4 @@ npm i
 npm run build
 ```
 
-The output will be in `/build`.
+The output will be in `/docs`.
