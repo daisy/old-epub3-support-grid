@@ -7,7 +7,7 @@ This project is a snapshot of the old epubtest.org archives, for anyone interest
 This is a static site, built with [11ty](https://11ty.io). 
 
 * `/utils`: script to convert the original site files to markdown
-* `/src`: static site generator source files (markdown)
+* `/src`: markdown content for the current site
 
 To build the site:
 
