@@ -7,9 +7,9 @@ This project is a static site for the old epubtest.org archives, for anyone inte
 * `/sources`: pages scraped directly from the site
 * `/src`: static site generator source files (markdown)
 
-The files in `/sources` were converted by the script in `/utils` and written as markdown files in `/src/content`.
+The files in `/src/content` were converted from the original site. The conversion mainly cleaned up links and reformatted the pages so they could be templated. No data was changed.
 
-Build the site:
+To build the site:
 
 ```
 npm i
