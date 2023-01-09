@@ -18,7 +18,7 @@
     "gulp": "^4.0.0",
     "gulp-pretty-html": "^2.0.10",
     "gulp-stylelint": "^9.0.0",
-    "luxon": "^1.12.1",
+    "luxon": "^2.5.2",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",
     "markdown-it-imsize": "^2.0.1",
